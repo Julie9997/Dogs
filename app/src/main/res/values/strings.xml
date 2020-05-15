@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Dogs</string>
+    <string name="orhName">Happy dogs</string>
+    <string name="address">Адрес: \n
+        Россия, г. N, ул. Счастливая, д.7</string>
+    <string name="description">Питомник для собак. Здесь принимают, лечат и спасают обездоленных животных, которые нуждаются в корме и лекарствах.\n
+    А так же стремятся найти своим подопечным новый дом.</string>
+    <string name="info">Приложение для учета собак в питомнике\n
+    Dogs\n
+    Разработала Фомина Ю.И.\n\n
+    Для добавления новой записи необходимо нажать на кнопку "о собаках". а затем на кнопку добавить. Появится окно, в котором необходимо внести
+    необходимую информацию.\n Можно так же удалять и изменять записи. Для этого необходимо нажать на элемент в списке, с котоорым нужно произвести
+    изменения.</string>
+    <string name="add">Добавить</string>
+    <string name="delete">удалить</string>
+    <string name="name">Имя</string>
+    <string name="num">№ места в питомнике</string>
+    <string name="date">Дата рождения</string>
+    <string name="breed">Порода</string>
+    <string name="features">Особые приметы</string>
+    <string name="save">сохранить</string>
+    <string name="name_">Кличка:</string>
+    <string name="age_">Примерный возраст:</string>
+    <string name="breed_">Порода:</string>
+    <string name="dates">Дата рождения:</string>
+    <string name="feature">Отличительные черты:</string>
+
+</resources>

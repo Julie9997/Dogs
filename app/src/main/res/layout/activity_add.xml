@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paw">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="315dp"
+        android:layout_height="60dp"
+        android:background="#E3FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/editAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="309dp"
+        android:layout_height="62dp"
+        android:background="#E3FFFFFF"
+        android:ems="10"
+        android:hint="@string/num"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="309dp"
+        android:layout_height="62dp"
+        android:background="#E3FFFFFF"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/date"
+        app:layout_constraintBottom_toTopOf="@+id/editFeatures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editType" />
+
+    <EditText
+        android:id="@+id/editType"
+        android:layout_width="312dp"
+        android:layout_height="63dp"
+        android:background="#E3FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/breed"
+        app:layout_constraintBottom_toTopOf="@+id/editDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+    <EditText
+        android:id="@+id/editFeatures"
+        android:layout_width="309dp"
+        android:layout_height="63dp"
+        android:background="#E3FFFFFF"
+        android:backgroundTint="#B2FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/features"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDate" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="149dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#97FA0101"
+        android:onClick="delete"
+        android:text="@string/delete"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/editFeatures" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="149dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#C84CAF50"
+        android:onClick="save"
+        android:text="@string/save"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFeatures" />
+
+</android.support.constraint.ConstraintLayout>
